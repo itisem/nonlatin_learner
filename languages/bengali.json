@@ -1,0 +1,33 @@
+{
+	"languageCode": "bn",
+	"ttsCode": "bn-IN",
+	"countries":[
+		{
+			"name": "Bangladesh",
+			"code": "Q902",
+			"defaultEnabled": true
+		}
+	],
+	"customPlaceTypes":[
+		{
+			"name": "district of Bangladesh",
+			"code": "Q152732",
+			"defaultEnabled": true
+		},
+		{
+			"name": "upazila of Bangladesh",
+			"code": "Q620471",
+			"defaultEnabled": true
+		}
+	],
+	"textReplacements":{
+		"en":[
+			" district",
+			" (sadar )?upazila"
+		],
+		"local":[
+			" জেলা",
+			" (সদর )?উপজেলা"
+		]
+	}
+}

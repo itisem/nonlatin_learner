@@ -1,0 +1,51 @@
+{
+	"languageCode": "ko",
+	"ttsCode": "ko-KR",
+	"countries":[
+		{
+			"name": "South Korea",
+			"code": "Q884",
+			"defaultEnabled": true
+		},
+		{
+			"name": "North Korea",
+			"code": "Q423",
+			"defaultEnabled": false
+		}
+	],
+	"customPlaceTypes":[
+		{
+			"name": "city of South Korea",
+			"code": "Q29045252",
+			"defaultEnabled": true
+		},
+		{
+			"name": "myeon",
+			"code": "Q483515",
+			"defaultEnabled": true
+		},
+		{
+			"name": "eup",
+			"code": "Q42132",
+			"defaultEnabled": true
+		},
+		{
+			"name": "ri",
+			"code": "Q483519",
+			"defaultEnabled": true
+		}
+	],
+	"textReplacements":{
+		"en":[
+			"[ -]?myeon",
+			"[ -]?ri$"
+		],
+		"local":[
+			"면",
+			"리$",
+			"시$",
+			"광역",
+			"특별"
+		]
+	}
+}

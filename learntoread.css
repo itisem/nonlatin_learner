@@ -1,0 +1,32 @@
+#game, #switch, h1{
+	text-align: center;
+}
+#question{
+	font-size: 3em;
+}
+#guess{
+	margin: 0 auto;
+}
+.incorrect{
+	color: red;
+}
+.correct{
+	color: green;
+}
+#guessInfo p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.switcher{
+	color: blue;
+	margin-left: 0.5em;
+}
+.switcher:hover{
+	text-decoration: underline;
+}
+#switch{
+	font-size: 1.2em;
+}
+#lastGuess{
+	height: 1.5em;
+}

@@ -1,0 +1,29 @@
+{
+	"languageCode": "ar",
+	"ttsCode": "ar-XA",
+	"countries":[
+		{
+			"name": "Tunisia",
+			"code": "Q948",
+			"defaultEnabled": true
+		},
+		{
+			"name": "Jordan",
+			"code": "Q810",
+			"defaultEnabled": true
+		},
+		{
+			"name": "Palestine",
+			"code": "Q219060",
+			"defaultEnabled": true
+		}
+	],
+	"customPlaceTypes":[
+	],
+	"textReplacements":{
+		"en":[
+		],
+		"local":[
+		]
+	}
+}

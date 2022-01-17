@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>learn to read non-latin scripts with placenames</title>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="core.js"></script>
+		<script type="text/javascript" src="textReader.js"></script>
+		<script type="text/javascript" src="placenameGame.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				var placenameGame = new PlacenameGame("AIzaSyAJIVVaniaWBtvDHyzsIhlVNXGSn2pwYb4")
+				fetch("languages/availableLanguages").then(
+					results => results.json()
+				).then(
+					results => {
+						let switcher = document.getElementById("switch")
+						questionElement = document.getElementsByTagName("question")[0]
+						for(let i = 0; i < results.length; i++){
+							let element = document.createElement("span")
+							element.innerHTML = results[i]
+							element.className = "switcher"
+							element.id = `switcher_${results[i]}`
+							element.addEventListener("click", () => placenameGame.switchLanguage(results[i]))
+							switcher.appendChild(element)
+						}
+					}
+				)
+			}
+		</script>
+		<link rel="stylesheet" href="learntoread.css"/>
+	</head>
+	<body>
+		<div id="settings">
+			<div id="switch">
+				switch language: 
+			</div>
+		</div>
+		<div id="game">
+			<h1>
+				<div id="question">
+					<span id="currentQuestion">[loading]</span>
+					<input type="button" id="audioButton" value="🔊"/>
+				</div>
+				<div id="lastGuess">
+
+				</div>
+			</h1>
+			<div id="guess">
+				<input type="text" id="guessInput" placeholder="enter your guess here..." />
+				<input type="button" id="guessButton" value="guess" />
+				<input type="button" id="giveUp" value="give up" />
+			</div>
+			<div id="faq">
+				<h2>notes</h2>
+				<p>sometimes, transliterations may differ from google maps. i get all my data from wikidata, so they are not always exactly the same.</p>
+				<p>more languages are coming soon, but wikidata is a fuck and every country requires subtle adjustments.</p>
+				<p>i might add some more settings at some point (i.e. exclude/include countries, location types, etc.), we shall see</p>
+			</div>
+		</div>
+	</body>
+</html>

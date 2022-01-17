@@ -1,0 +1,24 @@
+{
+	"languageCode": "ru",
+	"ttsCode": "ru-RU",
+	"countries":[
+		{
+			"name": "Russia",
+			"code": "Q159",
+			"defaultEnabled": true
+		}
+	],
+	"customPlaceTypes":[
+		{
+			"name": "posylok",
+			"code": "Q2514025",
+			"defaultEnabled": true
+		}
+	],
+	"textReplacements":{
+		"en":[
+		],
+		"local":[
+		]
+	}
+}

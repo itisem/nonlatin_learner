@@ -1,0 +1,33 @@
+{
+	"languageCode": "th",
+	"ttsCode": "th-TH",
+	"countries":[
+		{
+			"name": "Thailand",
+			"code": "Q869",
+			"defaultEnabled": true
+		}
+	],
+	"customPlaceTypes":[
+		{
+			"name": "province of Thailand",
+			"code": "Q50198",
+			"defaultEnabled": true
+		},
+		{
+			"name": "tambon",
+			"code": "Q1077097",
+			"defaultEnabled": true
+		}
+	],
+	"textReplacements":{
+		"en":[
+		],
+		"local":[
+			"(เทศบาล)?เมือง",
+			"จังหวัด",
+			"แหล่งโบราณคดี",
+			"ตำบล"
+		]
+	}
+}
